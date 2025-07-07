@@ -19,5 +19,5 @@ func IsPalindrome(s string) bool {
 }
 
 func ToUpper(s string) string {
-	strings.ToUpper(s)
+	return strings.ToUpper(s)
 }
