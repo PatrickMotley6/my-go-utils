@@ -1,6 +1,8 @@
 // package stringutil 提供了一系列字符串处理的实用函数。
 package stringutil
 
+import "strings"
+
 // Reverse 返回一个将输入字符串 s 按 rune（Unicode码点）反转后的新字符串。
 func Reverse(s string) string {
 	r := []rune(s)
@@ -14,4 +16,8 @@ func Reverse(s string) string {
 // 这个实现通过调用 Reverse 函数来完成，可读性好。
 func IsPalindrome(s string) bool {
 	return s == Reverse(s)
+}
+
+func ToUpper(s string) string {
+	strings.ToUpper(s)
 }
